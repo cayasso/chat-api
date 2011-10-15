@@ -1,0 +1,78 @@
+/* Jonathan Brumley */
+.start-link {
+	display: none;
+}
+
+.js .user-id-pop {
+	display: none;
+	height: 120px;
+	width: 300px;
+}
+
+.js .start-link {
+	display: block;
+}
+
+.js .chat-widget, .js .release-link, .js .records-link { display: none; }
+ 
+.chat-area { border: 2px solid #CCC; background-color: #EEE; color: blue; font-size: 15px; height: 300px; width: 500px; overflow: auto; margin: 15px; }
+
+.chat-message { color: #555; padding: 5px 10px; }
+
+.error {  background-color: #EF614F; }
+
+.success { background-color: #39EF94; }
+
+.action-link { float: left; margin: 0 10px; padding: 2px 5px; background-color: #EEE; border: 1px dotted #CCC; text-decoration: none}
+
+.overlay {
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0;
+	filter:alpha(opacity=0);
+	z-index:50;	
+	position: fixed;
+	_position: absolute;
+}
+
+.pp-wrap {
+	position: absolute;
+	z-index:99;
+	display: none;
+	background-color: transparent;
+	margin: 0;
+	top: 20%;
+	left: 5%;	
+}
+
+.pp-close-button {
+	width:19px;
+	height:19px;
+	display:block;	
+}
+
+.pp-close-icon {
+	margin: 4px 3px 0;
+	height:19px;
+	width: 19px;
+	display:block;	
+	float: right;
+	cursor:pointer;
+}
+
+.pp-content { 
+	border-top: none;
+	width: auto;
+	background-color: #FFF;
+	display: none;
+	padding: 15px;	
+	border: 2px solid #000;		
+	-moz-border-radius:6px;
+	-moz-border-radius:6px;	
+	-webkit-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+

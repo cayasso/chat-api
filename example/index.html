@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>API CHAT</title>
+  	<script type="text/javascript">(function(H,C){H[C]='js';})(document.documentElement, 'className');</script>   	
+	<link type="text/css" href="css/chat.css" rel="Stylesheet" />
+	
+  </head>
+  <body> 
+  
+  	<h1>Chat API Example</h1>
+  	 <hr />
+  	<a class="start-link action-link" href="">Set your id</a> 
+  	<a class="release-link action-link" href="/chat/release-id.php?js=no-js">Release your id</a>
+  	<a class="records-link action-link" href="/chat/chat-records.php?js=no-js">Load chat records</a><br />
+  	
+  	<p><strong>Chat status message: </strong><span class="chat-message"></span></p>
+  	
+  	<div class="chat-widget">
+	  	<div class="chat-area"></div>
+	  	
+	  	<form class="chat-form" action="/chat/message.php?js=no-js">	
+		Send message: <input id="message" name="message" />
+		<noscript><input type="hidden" name="js" value="no-js" /></noscript>
+		<input type="submit" name="send-message" value="Send" />
+		</form>		
+    </div>
+    
+    <div class="user-id-pop">  
+ 
+    	<h2>SET USER ID</h2>	
+    	<form class="chat-form" method="GET" action="/chat/change-id.php">
+    	Please choose a username: <input id="userid" name="id" />
+    	<noscript><input type="hidden" name="js" value="no-js" /></noscript>
+
+    	<input type="submit" name="change-id" value="Change" />
+    	</form>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/chat.client.min.js"></script>	
+	<script type="text/javascript">	
+		// Execute the chat client
+		$.chat();	
+	</script>
+  </body>
+</html>

@@ -17,7 +17,7 @@
 			releaseLink : '.release-link',
 			recordsLink : '.records-link',
 			chatArea: '.chat-area',
-			domain : 'http://localhost/chat',
+			domain : 'http://localhost/chat-api/example',
 			widget: '.chat-widget',
 			message : '.chat-message'
 		},
